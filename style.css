@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap%27);
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+/*---------------
+    Page web
+-----------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: "Montserrat";
+    scroll-behavior: smooth;
+}
+
+/*----------------
+    Haut page 
+-----------------*/
+
+header{
+    background-color: #0A74BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+nav a{
+    display: flex;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    padding: 10px 40px;
+    font-size: 25px;
+}
+
+/*-------------------
+    Section intro
+--------------------*/
+
+section#intro{
+    background: linear-gradient(#0A74BA, #0099ff);
+}
+
+h1{
+    font-family: serif;
+}
+
+#intro div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#intro h1{
+    width: 40%;
+    font-size: 8em;
+    margin-left: 10%;
+}
+
+#intro button{
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    font-family: "Montserrat";
+    border-radius: 50px;
+    margin-left: 15%;
+    transition: 0.5s;
+    position: relative;
+    background: white;
+    overflow: hidden;
+}
+
+#intro i{
+    display: none;
+}
+
+#intro button:hover i{
+    display: inline;
+    margin-left: 10px;
+}
+
+#intro button:hover{
+    width: 20%;
+}
+
+@media only screen and (max-width: 1220px){
+    #intro h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 30px 0;
+    }
+}
+
+/*-------------------------
+    Section presentation
+--------------------------*/
+
+#presentation svg{
+    display: flex;
+}
+
+#presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#presentation div.carte{
+    display: flex;
+    background-color: #0099ff;
+    height: 300px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px;
+    position: relative;
+    font-size: 1.4em;
+}
+
+#presentation div.carte .fleche-bas::after{
+    content: "\002193";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    bottom: 0;
+    right: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    background-color: black;
+    border-radius: 50px;
+    transform: translate(50%, 50%);
+    position: absolute;
+}
+
+#presentation div p{
+    margin: auto 30px;
+}
+
+/*-------------------------
+    Section personnalite
+---------------------------*/
+
+svg.perso-svg{
+    display: flex;
+}
+
+#personnalite{
+    background-color: #0099ff;
+}
+
+#personnalite h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    margin-bottom: 5%;
+}
+
+#personnalite h2{
+    font-family: "Ms madi";
+}
+
+#personnalite p{
+    font-size: 1.2em;
+}
+
+div.personnalite-fort, div.personnalite-faible{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+#personnalite h2{
+    font-size: 40px;
+    margin: 30px auto;
+}
+
+div.logique, div.interpersonnelle, div.verbale, div.bouton{
+    width: 500px;
+    height: 450px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+div.logique p, div.interpersonnelle p, div.verbale p{
+    margin: 0px 30px;
+}
+
+div.bouton{
+    align-items: center;
+    justify-content: center;
+}
+
+div.bouton p{
+    margin-bottom: 50px;
+}
+
+#personnalite button{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-family: "Montserrat";
+    border-radius: 10px;
+    box-shadow: 0px 10px black;
+    background-color: #0099ff;
+    color: white;
+}
+
+#personnalite button:active{
+    position: relative;
+    box-shadow: 0 3px;
+    top: 7px;
+}
+
+/*--------------------
+    Section projets
+---------------------*/
+
+svg.projets-svg{
+    display: flex;
+}
+
+#projets h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    padding-top: 50px;
+}
+
+#projets div.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#projets div.presentation img{
+    box-shadow: -5px 5px 5px;
+}
+
+#projets div.texte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0099ff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px;
+    max-width: 600px;
+}
+
+#projets div.texte p{
+    margin: 50px 50px 10px 50px;
+    font-size: 1.2em;
+}
+
+#projets button{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-family: "Montserrat";
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px black;
+    background-color: white;
+    color: black;
+}
+
+#projets button:active{
+    position: relative;
+    box-shadow: 0 3px;
+    top: 7px;
+}
+
+/*-------------
+    Bas page
+--------------*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #0099ff;
+    padding: 10px;
+}

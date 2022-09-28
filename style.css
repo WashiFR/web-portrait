@@ -8,6 +8,7 @@
 *{
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 
 html{
@@ -133,7 +134,7 @@ h1{
     height: 300px;
     width: 50%;
     border-radius: 10px;
-    box-shadow: 0px 5px 5px;
+    box-shadow: 0px 5px 5px black;
     position: relative;
     font-size: 1.4em;
 }
@@ -160,18 +161,18 @@ h1{
 }
 
 /*-------------------------
-    Section personnalite
+    Section intelligence
 ---------------------------*/
 
 svg.perso-svg{
     display: flex;
 }
 
-#personnalite{
+#intelligence{
     background-color: #0099ff;
 }
 
-#personnalite h1{
+#intelligence h1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,15 +180,15 @@ svg.perso-svg{
     margin-bottom: 5%;
 }
 
-#personnalite h2{
+#intelligence h2{
     font-family: "Ms madi";
 }
 
-#personnalite p{
+#intelligence p{
     font-size: 1.2em;
 }
 
-div.personnalite-fort, div.personnalite-faible{
+div.intelligence-forte, div.intelligence-faible{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -195,7 +196,7 @@ div.personnalite-fort, div.personnalite-faible{
     padding-bottom: 50px;
 }
 
-#personnalite h2{
+#intelligence h2{
     font-size: 40px;
     margin: 30px auto;
 }
@@ -224,7 +225,7 @@ div.bouton p{
     margin-bottom: 50px;
 }
 
-#personnalite button{
+#intelligence button{
     height: 50px;
     width: 200px;
     font-size: 20px;
@@ -235,7 +236,7 @@ div.bouton p{
     color: white;
 }
 
-#personnalite button:active{
+#intelligence button:active{
     position: relative;
     box-shadow: 0 3px;
     top: 7px;
@@ -276,7 +277,7 @@ svg.projets-svg{
     align-items: center;
     background-color: #0099ff;
     border-radius: 10px;
-    box-shadow: 0px 5px 5px;
+    box-shadow: 0px 5px 5px black;
     max-width: 600px;
 }
 

@@ -316,3 +316,14 @@ footer{
     background-color: #0099ff;
     padding: 10px;
 }
+
+
+.copyright a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyright a:hover {
+    color: white;
+    text-decoration: underline;
+}

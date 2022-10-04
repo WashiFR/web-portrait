@@ -58,6 +58,15 @@ nav a:hover{
 
 section#intro{
     background: linear-gradient(#0A74BA, #0099ff);
+    display: flex;
+}
+
+@media only screen and (max-width: 1220px){
+    section#intro{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 h1{
@@ -67,50 +76,56 @@ h1{
 #intro div{
     display: flex;
     align-items: center;
+}
+
+#intro .left{
+    flex-direction: column;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 #intro h1{
-    width: 40%;
-    font-size: 8em;
-    margin-left: 10%;
+    font-size: 9em;
+    max-width: 70%;
 }
 
-#intro button{
-    height: 60px;
-    width: 200px;
-    font-size: 20px;
-    font-family: "Montserrat";
-    border-radius: 50px;
-    margin-left: 15%;
-    transition: 0.5s;
+#intro a{
     position: relative;
-    background: white;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    padding-bottom: 50px;
+    font-size: x-large;
+    color: black;
 }
 
 #intro i{
-    display: none;
+    font-size: x-large;
+    position: absolute;
+    color: black;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-name: updown;
 }
 
-#intro button:hover i{
-    display: inline;
-    margin-left: 10px;
-}
-
-#intro button:hover{
-    width: 20%;
-}
-
-@media only screen and (max-width: 1220px){
-    #intro h1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 30px 0;
+@keyframes updown{
+    from{
+        bottom: 40%;
     }
+    to{
+        bottom: 0%;
+    }
+}
+
+#intro a:hover{
+    text-decoration: underline;
+}
+
+#intro img{
+    width: 900px;
 }
 
 /*-------------------------
@@ -134,7 +149,7 @@ h1{
     height: 300px;
     width: 50%;
     border-radius: 10px;
-    box-shadow: 0px 5px 5px black;
+    box-shadow: 0 5px 5px black;
     position: relative;
     font-size: 1.4em;
 }
@@ -268,7 +283,7 @@ svg.projets-svg{
 }
 
 #projets div.presentation img{
-    box-shadow: -5px 5px 5px;
+    box-shadow: 0px 5px 7px;
     border-radius: 10px;
 }
 
@@ -316,7 +331,6 @@ footer{
     background-color: #0099ff;
     padding: 10px;
 }
-
 
 .copyright a {
     text-decoration: none;

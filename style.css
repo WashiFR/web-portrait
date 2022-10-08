@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap%27);
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Josefin+Sans:wght@500 & display=swap');
 
 /*---------------
     Page web
@@ -16,12 +17,32 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-image: url(asset/galaxie.jpg);
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: 'Josefin Sans', ;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Josefin Sans', ;
+    text-align: center;
+}
+
+svg{
+    display: flex;
+}
+
 /*----------------
     Haut page 
 -----------------*/
 
 header{
-    background-color: #0A74BA;
+    background-color: rgb(24, 26, 27);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +54,7 @@ nav{
     align-items: center;
     height: 60px;
     margin-top: 10px;
-    background-color: white;
+    background-color: rgb(35, 35, 35);
     border-radius: 100px;
 }
 
@@ -41,7 +62,7 @@ nav a{
     display: flex;
     padding: 10px 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 20px;
     border-radius: 50px;
     transition: 0.5s;
@@ -50,6 +71,7 @@ nav a{
 nav a:hover{
     padding: 10px 40px;
     font-size: 25px;
+    font-weight: bold;
 }
 
 /*-------------------
@@ -57,35 +79,24 @@ nav a:hover{
 --------------------*/
 
 section#intro{
-    background: linear-gradient(#0A74BA, #0099ff);
+    background-color: rgb(24, 26, 27);
     display: flex;
-}
-
-@media only screen and (max-width: 1220px){
-    section#intro{
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-h1{
-    font-family: serif;
+    justify-content: center;
+    height: 80vh;
 }
 
 #intro div{
     display: flex;
     align-items: center;
-}
-
-#intro .left{
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-around;
+    width: 100%;
 }
 
 #intro h1{
+    margin: auto;
     font-size: 9em;
-    max-width: 70%;
+    color: rgb(58, 178, 228);
 }
 
 #intro a{
@@ -97,13 +108,13 @@ h1{
     text-decoration: none;
     padding-bottom: 50px;
     font-size: x-large;
-    color: black;
+    color: white;
 }
 
 #intro i{
     font-size: x-large;
     position: absolute;
-    color: black;
+    color: white;
     animation-duration: 1.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -113,28 +124,16 @@ h1{
 
 @keyframes updown{
     from{
-        bottom: 40%;
+        bottom: 30%;
     }
     to{
         bottom: 0%;
     }
 }
 
-#intro a:hover{
-    text-decoration: underline;
-}
-
-#intro img{
-    width: 900px;
-}
-
 /*-------------------------
     Section presentation
 --------------------------*/
-
-#presentation svg{
-    display: flex;
-}
 
 #presentation{
     display: flex;
@@ -145,13 +144,12 @@ h1{
 
 #presentation div.carte{
     display: flex;
-    background-color: #0099ff;
+    background-color: white;
     height: 300px;
     width: 50%;
     border-radius: 10px;
-    box-shadow: 0 5px 5px black;
+    box-shadow: 0 7px 7px black;
     position: relative;
-    font-size: 1.4em;
 }
 
 #presentation div.carte .fleche-bas::after{
@@ -159,7 +157,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(58, 178, 228);
     bottom: 0;
     right: 50%;
     height: 50px;
@@ -171,36 +169,96 @@ h1{
     position: absolute;
 }
 
-#presentation div p{
+#presentation p{
+    font-size: 1.4em;
     margin: auto 30px;
+    color: black;
+    text-align: center;
+}
+
+/*---------------------- 
+    Section Hobbies
+----------------------*/
+
+section#hobbies{
+    background-color: rgb(24, 26, 27);
+}
+
+#hobbies img{
+    width: 550px;
+}
+
+#hobbies h1{
+    font-size: 3em;
+    color: rgb(58, 178, 228);
+    padding-top: 50px;
+}
+
+#hobbies .container{
+    display: flex;
+    flex-direction: column;
+}
+
+#hobbies h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#hobbies .parkour, .codage{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#hobbies .parkour-text, .codage-text{
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 150px 0;
+    max-width: 500px;
+    color: rgb(220, 220, 220);
+    background-color: rgb(35, 35, 35);
+}
+
+#hobbies .parkour img{
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#hobbies .parkour img:hover{
+    width: 600px;
+    box-shadow: 0 5px 5px black;
+}
+
+#hobbies .codage{
+    flex-direction: row-reverse;
+}
+
+#hobbies p{
+    font-size: 1.2em;
 }
 
 /*-------------------------
     Section intelligence
 ---------------------------*/
 
-svg.perso-svg{
-    display: flex;
-}
-
-#intelligence{
-    background-color: #0099ff;
-}
-
 #intelligence h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 3em;
-    margin-bottom: 5%;
-}
-
-#intelligence h2{
-    font-family: "Ms madi";
+    color: white;
+    margin-top: -150px;
+    padding-top: 50px;
 }
 
 #intelligence p{
     font-size: 1.2em;
+    text-align: center;
+}
+
+#intelligence a{
+    color: rgb(58, 178, 228);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 div.intelligence-forte, div.intelligence-faible{
@@ -208,10 +266,10 @@ div.intelligence-forte, div.intelligence-faible{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 50px;
 }
 
 #intelligence h2{
+    font-family: "Ms madi";
     font-size: 40px;
     margin: 30px auto;
 }
@@ -222,9 +280,10 @@ div.logique, div.interpersonnelle, div.verbale, div.bouton{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    box-shadow: 0px 2px 5px;
+    box-shadow: 0px 7px 7px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(240, 240, 240);
+    margin-top: 100px;
 }
 
 div.logique p, div.interpersonnelle p, div.verbale p{
@@ -243,12 +302,22 @@ div.bouton p{
 #intelligence button{
     height: 50px;
     width: 200px;
-    font-size: 20px;
+    font-size: large;
+    font-weight: bold;
     font-family: "Montserrat";
     border-radius: 10px;
-    box-shadow: 0px 10px black;
-    background-color: #0099ff;
-    color: white;
+    box-shadow: 0 10px black;
+    background-color: white;
+    cursor: pointer;
+}
+
+#intelligence button:hover{
+    background-color: rgb(220, 220, 220);
+}
+
+#intelligence i{
+    color: red;
+    margin-right: 10px;
 }
 
 #intelligence button:active{
@@ -261,16 +330,19 @@ div.bouton p{
     Section projets
 ---------------------*/
 
-svg.projets-svg{
-    display: flex;
+.projets-svg{
+    background-color: rgb(24, 26, 27);
+    color: transparent;
+}
+
+#projets{
+    background-color: rgb(24, 26, 27);
 }
 
 #projets h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 3em;
     padding-top: 50px;
+    color: rgb(58, 178, 228);
 }
 
 #projets div.presentation{
@@ -278,40 +350,56 @@ svg.projets-svg{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 100px;
 }
 
 #projets div.presentation img{
-    box-shadow: 0px 5px 7px;
     border-radius: 10px;
+    width: 550px;
+    transition: 1s;
+}
+
+#projets div.presentation img:hover{
+    width: 600px;
+    box-shadow: 0 5px 5px black;
 }
 
 #projets div.texte{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0099ff;
     border-radius: 10px;
-    box-shadow: 0px 5px 5px black;
     max-width: 600px;
+    margin: 150px 0;
+    background-color: rgb(35, 35, 35);
 }
 
 #projets div.texte p{
-    margin: 50px 50px 10px 50px;
+    margin: 50px;
     font-size: 1.2em;
+    text-align: center;
+    color: rgb(220, 220, 220);
 }
 
 #projets button{
     height: 50px;
     width: 200px;
-    font-size: 20px;
+    font-size: large;
+    font-weight: bold;
     font-family: "Montserrat";
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 10px black;
     background-color: white;
     color: black;
+    cursor: pointer;
+}
+
+#projets button:hover{
+    background-color: rgb(220, 220, 220);
+}
+
+#projets i{
+    margin-right: 10px;
 }
 
 #projets button:active{
@@ -325,19 +413,18 @@ svg.projets-svg{
 --------------*/
 
 footer{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 20px;
-    background-color: #0099ff;
+    background-color: rgb(35, 35, 35);
     padding: 10px;
 }
 
 .copyright a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .copyright a:hover {
-    color: white;
+    color: rgb(58, 178, 228);
     text-decoration: underline;
 }

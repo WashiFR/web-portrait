@@ -17,7 +17,7 @@
         Haut de page
     ------------------->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" data-aos="fade-down" data-aos-duration="2000">
             <a href="index.html">Accueil</a>
             <a href="#presentation">Présentation</a>
             <a href="#intelligence">Intelligences</a>
@@ -31,15 +31,15 @@
 
     <section id="intro">
         <div class="left">
-            <h1>Web portrait</h1>
-            <a href="#presentation">
+            <h1 data-aos="fade-up" data-aos-duration="2000">Web portrait</h1>
+            <a href="#presentation" data-aos="fade-up" data-aos-duration="3000">
                 En savoir plus
                 <i class="fa-sharp fa-solid fa-angle-down"></i>
             </a>
         </div>
-        <div class="right">
+        <!-- <div class="right">
             <img src="asset/head-puzzle-tr.png" alt="">
-        </div>
+        </div> -->
     </section>
 
     <!--------------------------
@@ -48,20 +48,52 @@
 
     <section id="presentation">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 1440 200">
-            <path fill="#0099ff" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,154.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#007acc;"></path>
+            <path fill="rgb(24, 26, 27)" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,154.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#007acc;"></path>
         </svg>
-        <div class="carte" data-aos="zoom-in">
+        <div class="carte" data-aos="zoom-in" data-aos-duration="1000">
             <p>
-                Bonjour, je me présente, Weier Loris, 18 ans, célibataire est libre comme l'air.
-                Je suis passionné par la programmation après avoir découvert la matière NSI en première,
-                aujourd'hui encore, je continue sur cette voie étant actuellement en BUT Informatique.
+                Bonjour, je me présente, Weier Loris, 18 ans, célibataire est libre comme l'air. Je suis passionné par la programmation après avoir découvert la matière NSI en première, aujourd'hui encore, je continue sur cette voie étant actuellement en BUT Informatique.
             </p>
-            <a href="#intelligence" class="fleche-bas"></a>
+            <a href="#hobbies" class="fleche-bas"></a>
         </div>
     </section>
 
     <svg class="perso-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
-        <path fill="#0099ff" fill-opacity="1" d="M0,96L80,133.3C160,171,320,245,480,256C640,267,800,213,960,186.7C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#007acc;"></path>
+        <path fill="rgb(24, 26, 27)" fill-opacity="1" d="M0,96L80,133.3C160,171,320,245,480,256C640,267,800,213,960,186.7C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#007acc;"></path>
+    </svg>
+
+    <!----------------------
+        Section Hobbies
+    ------------------------>
+
+    <section id="hobbies">
+        <h1 data-aos="zoom-in" data-aos-duration="1000">Mes Hobbies</h1>
+        <div class="container">
+            <div class="parkour">
+                <a href="https://instagram.com/originalfrenchpower?igshid=YmMyMTA2M2Y=" data-aos="zoom-in-right" data-aos-duration="2000">
+                    <img src="asset/007-parkour.jpg" alt="">
+                </a>
+                <div class="parkour-text">
+                    <h2>Parkour</h2>
+                    <p>
+                        J'ai découvert le Parkour grâce à des amis vers la fin du collège, j'ai décidé de m'y inscrire dans le même club qu'eux à Yutz, car je commençais à me lasser du Handball. <br> Je m'y suis entraîné pendant 3 ans (un peu moins à cause du Covid), je ne suis pas le plus doué et par rapport à certains, je suis même en "retard", mais cela n'est pas dérangeant, car dans ce sport, tout le monde s'entraide, notamment les plus expérimentés qui n'hésiteront pas à vous donner des conseils pour vous aider à progresser.
+                    </p>
+                </div>
+            </div>
+            <div class="codage">
+                <img src="asset/coding.png" alt="" data-aos="zoom-in" data-aos-duration="2000">
+                <div class="codage-text">
+                    <h2>Programmation</h2>
+                    <p>
+                        Depuis que j'ai découvert la matière NSI en première, j'ai découvert une passion pour la programmation et aussi pour le développement web. Lorsque je code, il m'arrive de coder plusieurs heures d'affilée sans m'en rendre compte surtout lorsque je travaille sur quelque chose que j'aime, comme mon projet de fin d'année de NSI sur lequel j'ai pris beaucoup de plaisir à travailler dessus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="rgb(24, 26, 27)" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,106.7C672,75,768,53,864,48C960,43,1056,53,1152,101.3C1248,149,1344,235,1392,277.3L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#007acc;"></path>
     </svg>
 
     <!--------------------------
@@ -69,47 +101,42 @@
     ---------------------------->
 
     <section id="intelligence">
-        <h1 data-aos="fade-down">Mes intelligences fortes et faibles</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1000">Mes intelligences fortes et faibles</h1>
         <div class="intelligence-forte">
-            <div class="logique" data-aos="fade-right">
+            <div class="logique" data-aos="fade-right" data-aos-duration="2500">
                 <h2>+ Logique</h2>
                 <p>
-                    J’ai toujours eu des facilités en maths, en programmation et en général tout ce qui concerne 
-                    un raisonnement logique. Au collège lorsque l'on devait programmer des robots (suiveur de ligne, 
-                    course et sumo en Techno Bot) avec un ami on était en général les premiers à finir les TP.
-                    De plus, je préfère largement les matières avec un raisonnement logique et où l'on doit
-                    comprendre le cours plutôt que les matières où l'on doit juste apprendre par coeur notre cours.
+                    J’ai toujours eu des facilités en maths, en programmation et en général tout ce qui concerne un raisonnement logique. Au collège, l'on devait programmer des robots (suiveur de ligne, course et sumo en <a href="https://www.ville-yutz.fr/2021/06/11/technobot/">TechnoBot</a>) avec un ami, on était en général les premiers à finir les TP. De plus, je préfère largement les matières avec un raisonnement logique et où l'on doit comprendre le cours plutôt que les matières où l'on doit juste apprendre par cœur notre cours.
                 </p>
             </div>
-            <div class="interpersonnelle" data-aos="fade-left">
+            <div class="interpersonnelle" data-aos="fade-left" data-aos-duration="2500">
                 <h2>+ Interpersonnelle</h2>
                 <p>
-                    Je n’ai jamais eu de difficulté à communiquer avec les personnes et est toujours été sociable, 
-                    bien que je sois assez discret, mais c’est surtout avec mes proches et mes amis que je m'ouvre
-                    le plus et que je suis le plus à l'aise pour communiquer.
+                    Je n’ai jamais eu de difficultés à communiquer avec les personnes et ai toujours été sociable, bien que je sois assez discret, mais c’est surtout avec mes proches et mes amis que je m'ouvre le plus et que je suis le plus à l'aise pour communiquer.
                 </p>
             </div>
         </div>
         <div class="intelligence-faible">
-            <div class="verbale" data-aos="fade-right">
+            <div class="verbale" data-aos="fade-right" data-aos-duration="1500">
                 <h2>- Verbale</h2>
                 <p>
-                    Etant de nature timide et introverti, je ne suis pas à l'aise pour aller communiquer vers les 
-                    inconnus ou lorsque je me retrouve à devoir parler devant plusieurs personne.
-                    De plus il m'arrive parfois de perdre ou de ne pas trouver mes mots.
+                    Étant de nature timide et introvertie, je ne suis pas à l'aise pour aller communiquer vers les inconnus ou lorsque je me retrouve à devoir parler devant plusieurs personnes. De plus, il m'arrive parfois de perdre ou de ne pas trouver mes mots.
                 </p>
             </div>
-            <div class="bouton" data-aos="fade-left">
+            <div class="bouton" data-aos="fade-left" data-aos-duration="1500">
                 <p>Lien vidéo sur les intelligences multiples :</p>
                 <a href="https://www.youtube.com/watch?v=gQLitHPA9Zg&ab_channel=TEDxTalks">
-                    <button>Vidéo</button>
+                    <button>
+                        <i class="fa-brands fa-youtube"></i>
+                        Regarder
+                    </button>
                 </a>
             </div>
         </div>
     </section>
 
-    <svg class="projets-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
-        <path fill="#0099ff" fill-opacity="1" d="M0,256L48,245.3C96,235,192,213,288,192C384,171,480,149,576,149.3C672,149,768,171,864,170.7C960,171,1056,149,1152,154.7C1248,160,1344,192,1392,208L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="rgb(24, 26, 27)" fill-opacity="1" d="M0,256L48,266.7C96,277,192,299,288,288C384,277,480,235,576,224C672,213,768,235,864,245.3C960,256,1056,256,1152,234.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
     </svg>
 
     <!--------------------
@@ -117,18 +144,20 @@
     --------------------->
 
     <section id="projets">
-        <h1 data-aos="fade-down">Ma plus grande réussite</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="1000">Ma plus grande réussite</h1>
         <div class="presentation">
-            <img src="asset/projet.png" alt="" width="600" data-aos="fade-up">
-            <div class="texte" data-aos="fade-up">
+            <a href="https://github.com/WashiFR/Projet" data-aos="fade-right" data-aos-duration="2000">
+                <img src="asset/projet.png" alt="">
+            </a>
+            <div class="texte">
                 <p>
-                    Ce projet est un jeu de combat, codé en python avec le module pygame, réalisé pour 
-                    le projet de fin d'année de NSI. Cela m'a pris beaucoup de temps mais c'est ce projet qui
-                    m'a fait aimer la programmation et qui m'a donné envie d'en faire mon futur métier.
-                    Si vous voulez découvrir mes autres projets, rendez-vous sur ma page Github :
+                    Ce projet est un jeu de combat codé en python avec le module pygame, réalisé pour le projet de fin d'année de NSI. Cela m'a pris beaucoup de temps mais c'est ce projet qui m'a fait aimer la programmation et qui m'a donné envie d'en faire mon futur métier. Si vous voulez découvrir mes autres projets, rendez-vous sur ma page Github :
                 </p>
                 <a href="https://github.com/WashiFR">
-                    <button>Découvrir</button>
+                    <button>
+                        <i class="fa-brands fa-github"></i>
+                        Découvrir
+                    </button>
                 </a>
             </div>
         </div>

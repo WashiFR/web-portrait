@@ -223,12 +223,12 @@ section#hobbies{
 
 #hobbies .parkour img{
     border-radius: 10px;
-    transition: 1s;
 }
 
-#hobbies .parkour img:hover{
-    width: 600px;
-    box-shadow: 0 5px 5px black;
+#hobbies a{
+    color: rgb(58, 178, 228);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 #hobbies .codage{
@@ -355,12 +355,6 @@ div.bouton p{
 #projets div.presentation img{
     border-radius: 10px;
     width: 550px;
-    transition: 1s;
-}
-
-#projets div.presentation img:hover{
-    width: 600px;
-    box-shadow: 0 5px 5px black;
 }
 
 #projets div.texte{

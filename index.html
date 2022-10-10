@@ -7,6 +7,7 @@
     <!-- Import animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="asset/icon-head-puzzle.png">
     <title>Web portrait</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
     <!-----------------
         Haut de page
     ------------------->
-    <header>
+    <header id="header">
         <nav class="navbar" data-aos="fade-down" data-aos-duration="2000">
             <a href="index.html">Accueil</a>
             <a href="#presentation">Présentation</a>
@@ -28,7 +29,7 @@
     --------------------->
 
     <section id="intro">
-        <div class="left">
+        <div>
             <h1 data-aos="fade-up" data-aos-duration="2000">Web portrait</h1>
             <a href="#presentation" data-aos="fade-up" data-aos-duration="3000">
                 En savoir plus
@@ -154,18 +155,19 @@
         </div>
     </section>
 
-    <!-----------------
-        Bas de page
-    ------------------->
+    <!-- Fleche retour haut -->
+    <div class="top-arrow">
+        <a href="#header">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+    </div>
 
+    <!-- Bas de page -->
     <footer class="copyright">
         <a href="https://twitter.com/Washi_fr">&copy;2022 - Washi</a>
     </footer>
 
-    <!---------------------
-        Script animation
-    ----------------------->
-
+    <!-- Script animation -->
     <script>
         AOS.init();
     </script>

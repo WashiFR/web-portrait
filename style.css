@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap%27);
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
-@import url('https://fonts.googleapis.com/css2? family= Josefin+Sans:wght@500 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 
 /*---------------
     Page web
@@ -23,13 +23,13 @@ body{
 }
 
 h1{
-    font-family: 'Josefin Sans', ;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 3em;
     text-align: center;
 }
 
 h2{
-    font-family: 'Josefin Sans', ;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
 }
 
@@ -54,7 +54,7 @@ nav{
     align-items: center;
     height: 60px;
     margin-top: 10px;
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(45, 45, 45);
     border-radius: 100px;
 }
 
@@ -330,11 +330,6 @@ div.bouton p{
     Section projets
 ---------------------*/
 
-.projets-svg{
-    background-color: rgb(24, 26, 27);
-    color: transparent;
-}
-
 #projets{
     background-color: rgb(24, 26, 27);
 }
@@ -350,6 +345,7 @@ div.bouton p{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 150px;
 }
 
 #projets div.presentation img{
@@ -363,7 +359,6 @@ div.bouton p{
     align-items: center;
     border-radius: 10px;
     max-width: 600px;
-    margin: 150px 0;
     background-color: rgb(35, 35, 35);
 }
 
@@ -382,7 +377,7 @@ div.bouton p{
     font-family: "Montserrat";
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0px 10px black;
+    box-shadow: 0 10px black;
     background-color: white;
     color: black;
     cursor: pointer;
@@ -402,6 +397,80 @@ div.bouton p{
     top: 7px;
 }
 
+/*--------------------
+    Section reseaux
+---------------------*/
+
+svg.svg{
+    background-color: rgb(35, 35, 35);
+}
+
+section#reseaux{
+    background-color: rgb(35, 35, 35);
+}
+
+#reseaux h1{
+    color: rgb(58, 178, 228);
+}
+
+#reseaux div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+#reseaux a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 0 20px;
+    text-decoration: none;
+    box-shadow: 0 5px 0 black;
+    border: 2px solid black;
+}
+
+#reseaux a.twitter:hover{
+    background-color: #00acee;
+}
+
+#reseaux a.instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+#reseaux a.discord:hover{
+    background-color: #7289da;
+}
+
+#reseaux a:active{
+    position: relative;
+    box-shadow: 0 1px black;
+    top: 5px;
+}
+
+#reseaux img{
+    display: none;
+    border-radius: 10px;
+}
+
+#reseaux i{
+    color: black;
+    font-size: x-large;
+    padding: 15px;
+}
+
+#reseaux .instagram i{
+    font-size: xx-large;
+}
+
+#reseaux i:hover{
+    color: white;
+}
+
 /*-------------------------
     Fleche retour haut
 --------------------------*/
@@ -414,11 +483,16 @@ div.bouton p{
     text-decoration: none;
     right: 25px;
     bottom: 25px;
-    background-color: rgb(45, 45, 45);
+    background-color: rgb(50, 50, 50);
     height: 50px;
     width: 50px;
     border-radius: 10px;
     opacity: 0.9;
+}
+
+.top-arrow a:hover{
+    box-sizing: border-box;
+    border: 2px solid white;
 }
 
 .top-arrow i{
@@ -433,7 +507,7 @@ div.bouton p{
 footer{
     text-align: center;
     font-size: 20px;
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(45, 45, 45);
     padding: 10px;
 }
 

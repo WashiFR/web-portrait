@@ -74,6 +74,23 @@ nav a:hover{
     font-weight: bold;
 }
 
+@media screen and (max-width: 700px) {
+    header{
+        background-color: rgb(45, 45, 45);
+    }
+    
+    nav{
+        flex-direction: column;
+        height: auto;
+        margin-top: 0;
+        border-radius: 0;
+    }
+    
+    nav a{
+        padding: 20px;
+    }
+}
+
 /*-------------------
     Section intro
 --------------------*/
@@ -131,6 +148,22 @@ section#intro{
     }
 }
 
+@media screen and (max-width: 700px) {
+    section#intro{
+        height: 70vh;
+    }
+
+    #intro div{
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    #intro h1{
+        margin: 100px;
+        font-size: 6em;
+    }
+}
+
 /*-------------------------
     Section presentation
 --------------------------*/
@@ -176,6 +209,29 @@ section#intro{
     text-align: center;
 }
 
+@media screen and (max-width: 1000px) {
+    
+    #presentation div.carte{
+        height: 300px;
+        width: 80%;
+    }
+    
+    #presentation p{
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    #presentation div.carte{
+        height: 400px;
+    }
+ 
+    #presentation p{
+        font-size: large;
+    }
+}
+
 /*---------------------- 
     Section Hobbies
 ----------------------*/
@@ -217,7 +273,7 @@ section#hobbies{
     border-radius: 10px;
     padding: 50px;
     margin: 150px 0;
-    max-width: 500px;
+    width: 500px;
     color: rgb(220, 220, 220);
     background-color: rgb(35, 35, 35);
 }
@@ -238,6 +294,30 @@ section#hobbies{
 
 #hobbies p{
     font-size: 1.2em;
+}
+
+@media screen and (max-width: 700px) {
+    
+    #hobbies h1{
+        padding: 50px 0;
+    }
+
+    #hobbies h2{
+        font-size: xx-large;
+    }
+
+    #hobbies img{
+        width: 80%;
+    }
+    
+    #hobbies .parkour-text, .codage-text{
+        margin: 100px 0;
+        width: 60%;
+    }
+    
+    #hobbies p{
+        font-size: 1em;
+    }
 }
 
 /*-------------------------
@@ -327,6 +407,20 @@ div.bouton p{
     top: 7px;
 }
 
+@media screen and (max-width: 1000px) {
+    #intelligence h1{
+        margin: 0 10px;
+    }
+    
+    #intelligence p{
+        font-size: 0.9em;
+    }
+    
+    div.logique, div.interpersonnelle, div.verbale, div.bouton{
+        width: 80%;
+    }
+}
+
 /*--------------------
     Section projets
 ---------------------*/
@@ -396,6 +490,25 @@ div.bouton p{
     position: relative;
     box-shadow: 0 3px;
     top: 7px;
+}
+
+@media screen and (max-width: 700px) {
+    #projets div.presentation{
+        margin-top: 50px;
+    }
+    
+    #projets div.presentation img{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    
+    #projets div.texte{
+        max-width: 80%;
+    }
+    
+    #projets div.texte p{
+        font-size: 1em;
+    }
 }
 
 /*--------------------
